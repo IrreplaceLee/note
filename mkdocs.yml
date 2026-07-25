@@ -1,0 +1,73 @@
+site_name: 学习笔记
+site_description: PyTorch 深度学习实战 & NPSLE 研究学习笔记
+site_author: IrreplaceLee
+docs_dir: docs
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 2026-07-24:
+      - torch 库的构成与训练流程: 20260724/torch库的构成与训练流程-2214.md
+      - PyTorch 环境与 import 基础: 20260724/PyTorch环境与import基础-2222.md
+      - 张量 Tensor 入门: 20260724/张量Tensor入门-2222.md
+      - 少样本学习与 NPSLE 数据稀缺: 20260724/少样本学习与NPSLE数据稀缺-2222.md
+      - 医学 AI 论文评判标准与 NPSLE 临床定位: 20260724/医学AI论文评判标准与NPSLE临床定位-2222.md
+  - 2026-07-25:
+      - RGB 通道与图像的张量表示: 20260725/RGB通道与图像的张量表示-0040.md
+      - 张量索引与取值: 20260725/张量索引与取值-0040.md
+      - 大写类与小写函数及预训练权重: 20260725/大写类与小写函数及预训练权重-0040.md
