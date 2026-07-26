@@ -66,5 +66,4 @@ print([(labels[idx], percentage[idx].item()) for idx in indices[0][:5]])
 
 - `softmax` + `argmax`（即 `torch.max` 取下标）是所有**分类任务**的标准收尾套路，你未来做 SLE/NPSLE 的「有病 / 无病」或分型分类时同样用它。
 - 概念小结表：`torch.max(x, dim)` 返回 (值, 下标)；`_` 是占位符；`softmax` 输出加起来=1；`.item()` 张量转数字；`dim=1` 沿类别维操作。
-- 相关笔记：[[批次维度与多图处理-unsqueeze-stack-cat-1535]]、[[张量索引与取值-0040]]。
-```
+- 相关笔记：[批次维度与多图处理](批次维度与多图处理-unsqueeze-stack-cat-1535.md)、[张量索引与取值](../20260725/张量索引与取值-0040.md)。
